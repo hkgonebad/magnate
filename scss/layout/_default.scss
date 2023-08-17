@@ -1,0 +1,27 @@
+body{
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-family: 'JioType', sans-serif;
+    font-weight: 400;
+}
+
+img, .img-responsive{
+    @extend .img-fluid;
+}
+
+a{
+    transition: all ease-in-out 300ms;
+}
+
+.container{
+    max-width: 90%;
+    width: 100%;
+
+    @include media-breakpoint-down(lg){
+        max-width: 100%;
+    }
+}
+
+.block{
+    padding: 60px 0;
+}
