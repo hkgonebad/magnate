@@ -1,0 +1,68 @@
+.mainHeader{
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    height: 150px;
+
+    .mhLeft{
+
+    }
+
+    .mhRight{
+        flex: 1;
+    }
+
+    .logo{
+        height: 100%;
+        background: #f7f7f7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img{
+            padding: 0 20px;
+            height: 80px;
+        }
+    }
+
+    .topHeader{
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+
+        .thWelcome{
+            flex: 1;
+            background: #e3eeef;
+
+            p{
+                font-size: 18px;
+                border-bottom: 1px solid #e1e1e1;
+                margin: 0 30px;
+                padding: 10px 0;
+                font-weight: 400;
+            }
+        }
+
+        .thSocial{
+            padding: 0 30px;
+            background: #e1e1e1;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            a{
+                display: inline-block;
+                height: 30px;
+                width: 30px;
+                text-align: center;
+                line-height: 30px;
+                background: #fff;
+                border-radius: 50%;
+
+                i{
+                    color: $primary;
+                }
+            }
+        }
+    }
+}

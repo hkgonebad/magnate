@@ -24,4 +24,14 @@ a{
 
 .block{
     padding: 60px 0;
+
+    &.bg-dark{
+        background-color: #2b2e34;
+        color: #fff;
+    }
+
+    &.bg-gray{
+        background-color: #eeeeee;
+    }
 }
+
