@@ -32,10 +32,30 @@ $(function() {
         $('.mainSlider').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
-            dots: true,
+            dots: false,
             autoplay: true,
             autoplayDuration: 3000,
-            arrows: false,
+            arrows: true,
+            prevArrow: $('.prevMs'),
+            nextArrow: $('.nextMs'),
+        });
+    }
+
+
+    // Industry Slider
+    if ($('.industrySlider').length > 0) {
+
+        $('.industrySlider').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            centerMode: true,
+            arrows: true,
+            dots: false,
+            speed: 300,
+            centerPadding: '20px',
+            infinite: true,
+            autoplaySpeed: 5000,
+            autoplay: true
         });
     }
 
