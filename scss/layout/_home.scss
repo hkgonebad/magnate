@@ -171,6 +171,41 @@
 // Services
 .services{
 	
+	.servContent{
+
+		h4{
+			font-size: 40px;
+			font-weight: 600;
+
+			margin-bottom: 30px;
+		}
+
+		p{
+
+		}
+	}
+
+	.servImg{
+
+		@include media-breakpoint-down(md){
+			margin: 15px 0;
+		}
+	}
+
+	.servSubList{
+		display: flex;
+		flex-flow: column;
+		gap: 20px;
+		justify-content: center;
+
+		p{
+			margin: 0;
+		}
+
+		a{
+			
+		}
+	}
 }
 
 

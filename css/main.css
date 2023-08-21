@@ -29152,14 +29152,15 @@ body {
   overflow-y: auto;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
+  color: #33363c;
 }
 
-/* line 12, ../laragon/www/magnate/scss/layout/_default.scss */
+/* line 13, ../laragon/www/magnate/scss/layout/_default.scss */
 a {
   transition: all ease-in-out 300ms;
 }
 
-/* line 16, ../laragon/www/magnate/scss/layout/_default.scss */
+/* line 17, ../laragon/www/magnate/scss/layout/_default.scss */
 .container {
   max-width: 90%;
   width: 100%;
@@ -29167,29 +29168,29 @@ a {
 }
 
 @media (max-width: 991.98px) {
-  /* line 16, ../laragon/www/magnate/scss/layout/_default.scss */
+  /* line 17, ../laragon/www/magnate/scss/layout/_default.scss */
   .container {
     max-width: 100%;
   }
 }
 
-/* line 26, ../laragon/www/magnate/scss/layout/_default.scss */
+/* line 27, ../laragon/www/magnate/scss/layout/_default.scss */
 .block {
   padding: 80px 0;
 }
 
-/* line 29, ../laragon/www/magnate/scss/layout/_default.scss */
+/* line 30, ../laragon/www/magnate/scss/layout/_default.scss */
 .block.bg-dark {
   background-color: #2b2e34;
   color: #fff;
 }
 
-/* line 34, ../laragon/www/magnate/scss/layout/_default.scss */
+/* line 35, ../laragon/www/magnate/scss/layout/_default.scss */
 .block.bg-gray {
   background-color: #eeeeee;
 }
 
-/* line 41, ../laragon/www/magnate/scss/layout/_default.scss */
+/* line 42, ../laragon/www/magnate/scss/layout/_default.scss */
 .btn.btn-main {
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -29201,14 +29202,14 @@ a {
 }
 
 @media (min-width: 768px) {
-  /* line 41, ../laragon/www/magnate/scss/layout/_default.scss */
+  /* line 42, ../laragon/www/magnate/scss/layout/_default.scss */
   .btn.btn-main {
     padding: 10px 25px;
     font-size: 16px;
   }
 }
 
-/* line 55, ../laragon/www/magnate/scss/layout/_default.scss */
+/* line 56, ../laragon/www/magnate/scss/layout/_default.scss */
 .btn.btn-main:hover {
   background: #4190C2;
 }
@@ -29712,7 +29713,34 @@ a {
   font-weight: 300;
 }
 
-/* line 178, ../laragon/www/magnate/scss/layout/_home.scss */
+/* line 176, ../laragon/www/magnate/scss/layout/_home.scss */
+.services .servContent h4, .services .servContent .h4 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 767.98px) {
+  /* line 188, ../laragon/www/magnate/scss/layout/_home.scss */
+  .services .servImg {
+    margin: 15px 0;
+  }
+}
+
+/* line 195, ../laragon/www/magnate/scss/layout/_home.scss */
+.services .servSubList {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* line 201, ../laragon/www/magnate/scss/layout/_home.scss */
+.services .servSubList p {
+  margin: 0;
+}
+
+/* line 213, ../laragon/www/magnate/scss/layout/_home.scss */
 .solutions {
   position: relative;
   overflow: hidden;
@@ -29720,7 +29748,7 @@ a {
   clip-path: polygon(0% 5%, 100% 0%, 100% 100%, 0% 100%);
 }
 
-/* line 185, ../laragon/www/magnate/scss/layout/_home.scss */
+/* line 220, ../laragon/www/magnate/scss/layout/_home.scss */
 .solutions:before {
   content: '';
   background-image: url("../img/bg/ctriangle-left.png");
@@ -29733,30 +29761,30 @@ a {
   width: 100%;
 }
 
-/* line 198, ../laragon/www/magnate/scss/layout/_home.scss */
+/* line 233, ../laragon/www/magnate/scss/layout/_home.scss */
 .industrySlider {
   /* Active center slide (You can change anything here for cenetr slide)*/
 }
 
-/* line 199, ../laragon/www/magnate/scss/layout/_home.scss */
+/* line 234, ../laragon/www/magnate/scss/layout/_home.scss */
 .industrySlider .slick-slide {
   margin: 0 15px 0 0;
   transform: scale(0.8);
   transition: all 0.4s ease-in-out;
 }
 
-/* line 204, ../laragon/www/magnate/scss/layout/_home.scss */
+/* line 239, ../laragon/www/magnate/scss/layout/_home.scss */
 .industrySlider .slick-slide, .industrySlider .slick-slide[aria-hidden="true"]:not(.slick-cloned) ~ .slick-cloned[aria-hidden="true"] {
   transform: scale(0.8, 0.8);
   transition: all 0.4s ease-in-out;
 }
 
-/* line 210, ../laragon/www/magnate/scss/layout/_home.scss */
+/* line 245, ../laragon/www/magnate/scss/layout/_home.scss */
 .industrySlider .slick-center, .industrySlider .slick-slide[aria-hidden="true"]:not([tabindex="-1"]) + .slick-cloned[aria-hidden="true"] {
   transform: scale(1.1);
 }
 
-/* line 213, ../laragon/www/magnate/scss/layout/_home.scss */
+/* line 248, ../laragon/www/magnate/scss/layout/_home.scss */
 .industrySlider .slick-current.slick-active {
   transform: scale(1.1);
 }
