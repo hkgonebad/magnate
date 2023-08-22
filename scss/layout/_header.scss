@@ -1,0 +1,254 @@
+$topheaderHeight: 45px;
+$navbarHeight: 70px;
+
+.mainHeader{
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    overflow: hidden;
+
+    .mhLeft{
+
+    }
+
+    .mhRight{
+        flex: 1;
+        position: relative;
+        background: #e3eeef;
+
+        &:before{
+            content: '';
+            position: absolute;
+            z-index: 2;
+            left: 0px;
+            top: 0;
+            width: 0px;
+            height: 0px;
+            border-top: 115px solid #f7f7f7;
+            border-bottom: 0px solid transparent;
+            border-right: 60px solid transparent;
+
+            @include media-breakpoint-down(sm){
+                display: none;
+            }
+        }
+    }
+
+    .logo{
+        height: 100%;
+        background: #f7f7f7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        img{
+            padding: 0 20px;
+            height: 70px;
+
+            @include media-breakpoint-down(lg){
+                height: auto;
+                max-height: 70px;
+            }
+        }
+    }
+
+    .topHeader{
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        height: 45px;
+
+        .thWelcome{
+            flex: 1;
+            position: relative;
+            padding-left: 60px;
+
+            @include media-breakpoint-down(lg){
+                display: none;
+            }
+
+            p{
+                font-size: 15px;
+                border-bottom: 1px solid #4074b040;
+                margin-left: 30px;
+                margin-bottom: 0;
+                padding: 12px 0;
+                color: $gray-600;
+                height: $topheaderHeight;
+
+                &:before{
+                    content: '';
+                    padding-left: 20px;
+                }
+            }
+        }
+
+        .thSocial{
+            padding: 0 30px;
+            background: #e1e1e1;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-basis: 287px;
+            position: relative;
+
+            &:after{
+                content: '';
+                position: absolute;
+                left: -20px;
+                top: 0;
+
+                width: 0px;
+                height: 0px;
+                border-top: $topheaderHeight solid transparent;
+                border-bottom: 0px solid transparent;
+                border-right: 20px solid #e1e1e1;
+
+                @include media-breakpoint-down(lg){
+                    display: none;
+                }
+            }
+
+            @include media-breakpoint-down(lg){
+                justify-content: flex-end;
+                flex: 1;
+                flex-basis: auto;
+            }
+
+            a{
+                display: inline-block;
+                height: 30px;
+                width: 30px;
+                text-align: center;
+                line-height: 30px;
+                background: #fff;
+                border-radius: 50%;
+                font-size: 14px;
+                color: $primary;
+
+                &:hover{
+                    background: $primary;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .navbar{
+        align-items: center;
+        padding: 0;
+        position: relative;
+        min-height: 60px;
+
+        .navbar-toggler{
+            position: absolute;
+            right: 15px;
+        }
+
+        .navbar-nav{
+            align-items: center;
+            height: $navbarHeight;
+            padding-right: 40px;
+
+            @include media-breakpoint-down(lg){
+                height: auto;
+                padding-right: 0;
+                margin-bottom: 60px;
+            }
+
+            .nav-link{
+
+                &.active, &:hover{
+
+                }
+            }
+        }
+
+        .rightActions{
+            display: flex;
+            align-items: center;
+            height: $navbarHeight;
+
+            .searchBtn{
+                display: flex;
+                align-items: center;
+                background: #88c3c9;
+                padding-right: 30px;
+                height: $navbarHeight;
+                position: relative;
+
+                @include media-breakpoint-down(lg){
+                    padding: 0px 10px;
+                }
+
+                &:after, &:before{
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+    
+                    width: 0px;
+                    height: 0px;
+                    border-top: $navbarHeight solid transparent;
+                    border-bottom: 0px solid transparent;
+                    border-right: 30px solid #88c3c9;
+
+                    @include media-breakpoint-down(lg){
+                        display: none;
+                    }
+                }
+
+                &:before{
+                    left: -30px
+                }
+
+                &:after{
+                    border-right: 30px solid #4da8b1;
+                }
+
+                .btn{
+                    color: #fff;
+                    font-size: 25px;
+                    padding: 5px 10px;
+
+                    &:focus, &:active{
+                        outline: none;
+                        box-shadow: none;
+                    }
+                }
+            }
+
+            .ctaTollfree{
+                display: flex;
+                align-items: center;
+                height: $navbarHeight;
+                width: 230px;
+                gap: 10px;
+                padding: 0 15px;
+                background: $cyan;
+                color: #fff;
+
+                @include media-breakpoint-down(lg){
+                    flex: 1;
+                    justify-content: center;
+                }
+
+                img{
+                    
+                }
+
+                p{
+                    margin: 0;
+                    font-size: 12px;
+
+                    span{
+                        display: block;
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
