@@ -56,60 +56,76 @@ var gotop = function() {
     $(window).scroll(updateprogress);
     var offset = 150;
     var duration = 550;
-    jQuery(window).on('scroll', function() {
-        if (jQuery(this).scrollTop() > offset) {
-            jQuery('.progress-wrap').addClass('active-progress');
+    $(window).on('scroll', function() {
+        if ($(this).scrollTop() > offset) {
+            $('.progress-wrap').addClass('active-progress');
         } else {
-            jQuery('.progress-wrap').removeClass('active-progress');
+            $('.progress-wrap').removeClass('active-progress');
         }
     });
-    jQuery('.progress-wrap').on('click', function(event) {
+    $('.progress-wrap').on('click', function(event) {
         event.preventDefault();
-        jQuery('html, body').animate({ scrollTop: 0 }, duration);
+        $('html, body').animate({ scrollTop: 0 }, duration);
         return false;
     })
 }}
 
 // Cursor
 const cursor = function () {
-    var myCursor = jQuery(".awz-mouse");
+    // Cache the cursor elements
+    const myCursor = $(".awz-mouse");
     if (myCursor.length) {
-      if ($("body")) {
-        const e = document.querySelector(".awz-mouse-inner"),
-          t = document.querySelector(".awz-mouse-outer");
-        let n,
-          i = 0,
-          o = !1;
-        (window.onmousemove = function (s) {
-          o ||
-            (t.style.transform =
-              "translate(" + s.clientX + "px, " + s.clientY + "px)"),
-            (e.style.transform =
-              "translate(" + s.clientX + "px, " + s.clientY + "px)"),
-            (n = s.clientY),
-            (i = s.clientX);
-        }),
-          $("body").on(
-            "mouseenter",
-            "a, .link-text, .progress-wrap, .btn, .accordion-button, .nav-link",
-            function () {
-              e.classList.add("mouse-hover"), t.classList.add("mouse-hover");
-            }
-          ),
-          $("body").on(
-            "mouseleave",
-            "a, .link-text, .progress-wrap, .btn, .accordion-button, .nav-link",
-            function () {
-              ($(this).is("a") && $(this).closest(".canvas").length) ||
-                (e.classList.remove("mouse-hover"),
-                t.classList.remove("mouse-hover"));
-            }
-          ),
-          (e.style.visibility = "visible"),
-          (t.style.visibility = "visible");
-      }
+        // If the cursor elements exist and the body element exists
+        if ($("body")) {
+            // Get the cursor inner and outer elements
+            const e = document.querySelector(".awz-mouse-inner"),
+                t = document.querySelector(".awz-mouse-outer");
+            
+            let n, i = 0, o = false;
+            
+            // Track mouse movement
+            window.onmousemove = function (s) {
+                if (!o) {
+                    t.style.transform = "translate(" + s.clientX + "px, " + s.clientY + "px)";
+                }
+                
+                e.style.transform = "translate(" + s.clientX + "px, " + s.clientY + "px)";
+                
+                n = s.clientY;
+                i = s.clientX;
+            };
+            
+            // Add mouse hover classes on certain elements
+            const hoverElements = [
+                "a",
+                ".link-text",
+                ".progress-wrap",
+                ".btn",
+                ".accordion-button",
+                ".nav-link",
+                ".testiBox"
+            ];
+            
+            $("body").on("mouseenter", hoverElements.join(), function () {
+                e.classList.add("mouse-hover");
+                t.classList.add("mouse-hover");
+            });
+            
+            $("body").on("mouseleave", hoverElements.join(), function () {
+                if ($(this).is("a") && $(this).closest(".canvas").length) {
+                    return;
+                }
+                e.classList.remove("mouse-hover");
+                t.classList.remove("mouse-hover");
+            });
+            
+            // Make the cursor elements visible
+            e.style.visibility = "visible";
+            t.style.visibility = "visible";
+        }
     }
 };
+
 
 ///////////////////////////////////
 $(function() {
@@ -144,6 +160,30 @@ $(function() {
     $("#footer").load(footerUrl, function() {
         cursor();
         gotop();
+    });
+
+    // Counter
+    $('.counter').each(function() {
+        var $this = $(this),
+            countTo = $this.attr('data-count');
+        
+        $({ countNum: $this.text()}).animate({
+          countNum: countTo
+        },
+      
+        {
+      
+          duration: 8000,
+          easing:'linear',
+          step: function() {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function() {
+            $this.text(this.countNum);
+            //alert('finished');
+          }
+      
+        });
     });
 
     // Main Slider
