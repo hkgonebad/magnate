@@ -239,6 +239,7 @@
 
 		img{
 			margin-bottom: 10px;
+			height: 70px;
 		}
 
 		h4{
@@ -350,11 +351,13 @@
 		align-items: center;
 		justify-content: center;
 		flex-wrap: wrap;
-		gap: 30px;
+		gap: 10px;
 		margin-bottom: 30px;
 
 		img{
 			// filter: grayscale(1);
+			max-height: 70px;
+			max-width: 130px;
 			transition: all ease-in-out 550ms;
 			transform: rotateY(0deg);
 

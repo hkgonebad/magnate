@@ -221,4 +221,25 @@ $(function() {
         });
     }
 
+    // Solutions
+    // Get all the solutionBox elements
+    const solutionBoxes = $(".solutionBox");
+
+    // Loop through each solutionBox
+    solutionBoxes.each(function () {
+        const image = $(this).find("img");
+        const originalSrc = image.attr("src");
+        const newSrc = originalSrc.replace("-orange.svg", "-black.svg");
+
+        // On hover, change the image source to the black version
+        $(this).hover(
+            function () {
+                image.attr("src", newSrc);
+            },
+            function () {
+                image.attr("src", originalSrc);
+            }
+        );
+    });
+
 })
