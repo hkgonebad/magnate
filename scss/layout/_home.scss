@@ -157,7 +157,7 @@
 				font-weight: 500;
 				margin: 0;
 
-				span{
+				b{
 					display: block;
 					font-size: 16px;
 					font-weight: 300;
@@ -239,6 +239,7 @@
 
 		img{
 			margin-bottom: 10px;
+			height: 70px;
 		}
 
 		h4{
@@ -350,12 +351,22 @@
 		align-items: center;
 		justify-content: center;
 		flex-wrap: wrap;
-		gap: 30px;
+		gap: 10px;
 		margin-bottom: 30px;
 
 		img{
 			// filter: grayscale(1);
+			max-height: 70px;
+			max-width: 130px;
+			transition: all ease-in-out 550ms;
+			transform: rotateY(0deg);
+
+			&:hover{
+				transform: rotateY(360deg);
+			}
 		}
+
+
 	}
 }
 
@@ -488,6 +499,9 @@
 				width: 50px;
 				text-align: center;
 				color: $warning;
+
+				transition: all ease-in-out 550ms;
+				transform: rotateY(0deg);
 			}
 
 			.tsCounter{
@@ -504,10 +518,93 @@
 					font-weight: 500;
 				}
 			}
+
+			&:hover{
+				i{
+					transform: rotateY(360deg);
+				}
+				
+			}
 		}
 	}
 
 	.testimonialArea{
 
+
+	}
+
+	.testiBox{
+		background: #fff;
+		padding: 20px;
+		border-radius: 20px;
+		display: flex;
+		align-items: center;
+		gap: 15px;
+		margin-right: 30px;
+		margin-bottom: 15px;
+		transition: all ease-in-out 250ms;
+		transform: translateY(0px);
+
+		&:nth-child(even){
+			margin-left: 30px;
+			margin-right: 0px;
+		}
+
+		&:hover{
+			transform: translateY(-10px);
+		}
+
+		@include media-breakpoint-down(md){
+			margin-right: 0 !important;
+			margin-left: 0 !important;
+		}
+
+		.testiImg{
+			flex-shrink: 0;
+
+			img{
+				border-radius: 50%;
+				height: 80px;
+			}
+		}
+
+		.testiDetails{
+
+			.testiRating{
+				display: flex;
+				align-items: center;
+				margin-bottom: 15px;
+
+				i{
+					color: $warning;
+					font-size: 10px;
+					margin: 0 2px;
+				}
+			}
+
+			p{
+				margin-bottom: 5px;
+				color: #000;
+				font-size: 15px;
+				font-weight: 500;
+			}
+
+			h4{
+				margin-bottom: 0px;
+				font-size: 13px;
+				font-weight: 400;
+				color: #000;
+
+				span{
+					color: $gray-600;
+					margin-left: 5px;
+					display: inline-block;
+
+					a{
+						color: $primary;
+					}
+				}
+			}
+		}
 	}
 }

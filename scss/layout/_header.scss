@@ -150,17 +150,56 @@ $navbarHeight: 70px;
             align-items: center;
             height: $navbarHeight;
             padding-right: 40px;
+            gap: 20px;
 
             @include media-breakpoint-down(lg){
                 height: auto;
                 padding-right: 0;
                 margin-bottom: 60px;
+                gap: 10px;
             }
 
             .nav-link{
+                font-weight: 500;
+                font-size: 15px;
+                position: relative;
+
+                &:before, &:after{
+                    content: '\f107';
+                    position: absolute;
+                    font-family: 'Font Awesome 6 Free';
+                    font-weight: 900;
+                    transition: all ease-in-out 250ms;
+                    color: $warning;
+                    opacity: 0;
+                }
+
+                &:before{
+                    left: 8px;
+                    bottom: 8px;
+                    transform: rotate(45deg);
+                }
+
+                &:after{
+                    right: 8px;
+                    top: 8px;
+                    transform: rotate(-135deg);
+                }
 
                 &.active, &:hover{
+                    color: #444;
 
+                    &:before{
+                        left: -8px;
+                        bottom: -8px;
+                        opacity: 1;
+                    }
+    
+                    &:after{
+                        right: -8px;
+                        top: -8px;
+                        opacity: 1;
+                    }
                 }
             }
         }
