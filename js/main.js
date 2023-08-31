@@ -153,6 +153,9 @@ $(function() {
     $("#workTogether").load(wtCtaUrl, function() {
         
     });
+    $("#workTogether2").load(wtCtaUrl, function() {
+        
+    });
 
     // Footer
     const footerUrl = "footer.html";
@@ -216,6 +219,76 @@ $(function() {
                     arrows: false,
                     centerMode: false,
                     centerPadding: '0px',
+                }}
+            ]
+        });
+    }
+
+    // Mobile - Clients Slider
+    if ($('.caSlide1').length > 0) {
+
+        $('.caSlide1').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false,
+            autoplay: true,
+            autoplayDuration: 3000,
+
+            responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                }}
+            ]
+        });
+    }
+
+    // Mobile - Clients Slider
+    if ($('.caSlide2').length > 0) {
+
+        $('.caSlide2').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false,
+            autoplay: true,
+            autoplayDuration: 2500,
+
+            responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                }}
+            ]
+        });
+    }
+
+    // Services Slide
+    if ($('.servicesSlide').length > 0) {
+
+        $('.servicesSlide').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            dots: true,
+            arrows: true,
+            autoplay: true,
+            autoplayDuration: 2500,
+
+            responsive: [{
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 3,
+                }},
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                }},
+            {
+                breakpoint: 320,
+                settings: {
+                    slidesToShow: 1,
                 }}
             ]
         });
