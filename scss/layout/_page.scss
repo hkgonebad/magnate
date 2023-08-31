@@ -50,6 +50,14 @@
         display: block;
     }
 
+    &.pTitle-dark{
+
+        h2, h3{
+            color: #444;
+        }
+        
+    }
+
     &.pTitleBtn{
 
         .link-text{
