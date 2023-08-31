@@ -15,6 +15,12 @@
         padding: 15px;
         border-radius: 10px;
 
+        @include media-breakpoint-down(md){
+            top: 0;
+            position: relative;
+            margin: 20px auto 20px;
+        }
+
         h4{
             text-transform: uppercase;
             position: relative;
@@ -183,6 +189,9 @@
         display: flex;
         align-items: center;
         flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 5px;
+        margin-bottom: 15px;
 
         .slBox{
             display: flex;
@@ -193,17 +202,63 @@
             border: 2px solid $teal;
             border-radius: 50%;
             padding: 15px;
+            position: relative;
 
             width: 150px;
             height: 150px;
 
+            &:after{
+                content: '';
+                position: absolute;
+                left: -2px;
+                right: -2px;
+                height: 30%;
+                background-color: #212529;
+                z-index: 2;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
             img{
                 margin-bottom: 8px;
+                position: relative;
+                z-index: 3;
             }
 
             p{
                 font-size: 12px;
                 font-weight: 400;
+                position: relative;
+                z-index: 3;
+            }
+        }
+    }
+
+    .stepsDetails{
+        margin-top: 30px;
+
+        .sdBox{
+            margin-bottom: 30px;
+
+            h4{
+                position: relative;
+                padding-left: 30px;
+                font-size: 22px;
+                margin-bottom: 15px;
+
+                span{
+                    position: absolute;
+                    left: 0;
+                    color: $primary;
+                    font-size: 24px;
+                    font-weight: 600;
+                }
+            }
+
+            p{
+                padding-left: 30px;
+                font-weight: 300;
+                font-size: 15px;
             }
         }
     }

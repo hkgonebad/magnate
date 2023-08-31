@@ -153,6 +153,9 @@ $(function() {
     $("#workTogether").load(wtCtaUrl, function() {
         
     });
+    $("#workTogether2").load(wtCtaUrl, function() {
+        
+    });
 
     // Footer
     const footerUrl = "footer.html";
