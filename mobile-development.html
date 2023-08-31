@@ -17,19 +17,22 @@
     <!--  -->
     <main>
 
-        <!--  -->
-        <section class="banner">
-            <div class="container-fluid">
-                <div class="mainSlider">
-                    <div class="item">
-                        <div class="captions">
+        <!-- Banner -->
+        <section class="banner mobileDev">
+            <div class="mainSlider">
+                <div class="item">
+                    <img class="sliderImg" src="img/mobile/mobile.jpg" alt="">
+                    <div class="captions">
+                        <div class="container">
                             <b>_Magnate Web Solutions INC</b>
                             <h4>Mobile Development</h4>
                             <p>We take pride in being the preferred IT services provider to world leading brands and business spread globally. Some of our clients include:</p>
                         </div>
                     </div>
                 </div>
+            </div>
 
+            <div class="container">
                 <div class="consultForm">
                     <form action="">
                         <h4>Request a Free Consultation</h4>
@@ -50,30 +53,42 @@
             </div>
         </section>
 
-        <!--  -->
-        <section class="block overview">
-            <div class="container-fluid">
+        <!-- Overview -->
+        <section class="block overview about bg-dark">
+            <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <div class="ovImg">
-
+                            <img src="img/mobile/overview.png" alt="">
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-8">
                         <div class="ovDetails">
-                            <div class="cTitle">
-                                <h4>_Mobile App Development</h4>
+                            <div class="pTitle">
+                                <b>_Mobile App Development</b>
                                 <h3>Overview</h3>
                             </div>
 
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore esse alias praesentium qui quibusdam optio porro rerum voluptatem non saepe delectus eligendi harum, omnis quasi quae soluta odit provident voluptatibus.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quo itaque numquam minima a quam dicta cupiditate pariatur aliquid doloribus tempora asperiores nisi atque ipsum possimus ipsam, amet inventore corporis.</p>
+                            <p>In this rapidly-evolving era, cutting-edge mobile applications provide your business with a vital competitive advantage. MWS stands as a renowned leader in the realm of application development across diverse mobile platforms, including Android and iOS. We facilitate seamless connectivity with your business partners and clients around the clock, even while you're on the move.</p>
 
-                            <h4>Widely used <b>Mobile Operating System</b></h4>
+                            <p>Mobile application development represents a distinct approach to creating operating systems and application software for the ever-growing mobile interface. These programs boast a unique structure that sets them apart from traditional computer-compliant software applications.</p>
+                            
+                            <div class="pTitle mt-4">
+                                <b>Widely used <strong>Mobile Operating System</strong></h4>
+                            </div>
 
                             <div class="ovPercent">
                                 <div class="ovpBox">
-
+                                    <img src="img/partners/android.png" alt="">
+                                    <span>72.92%</span>
+                                </div>
+                                <div class="ovpBox">
+                                    <img src="img/partners/ios.png" alt="">
+                                    <span>26.53%</span>
+                                </div>
+                                <div class="ovpBox">
+                                    <img src="img/partners/windows.png" alt="">
+                                    <span>0.54%</span>
                                 </div>
                             </div>
                         </div>
@@ -84,26 +99,51 @@
             </div>
         </section>
 
-        <!--  -->
-        <section class="block whatWeDo">
-            <div class="container-fluid">
-                <div class="pTitle">
+        <!-- What We Do -->
+        <section class="block whatWeDo services">
+            <div class="container">
+                <div class="cTitle text-center">
                     <h3>What we DO?</h3>
                     <p>We build IOS and Android app </p>
                 </div>
 
-                <div class="nav-tabs">
-
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="android" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                        <div class="row align-items-center">
+                            <div class="col-sm-3">
+                                <div class="servServiceIcon">
+                                    <img src="img/partners/android.png" alt="">
+                                    <h4>Android Technology</h4>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="servService">
+                                    <p>It is one of the fastest growing platforms for mobile app development. You need unique call-to-action Android apps to impress the consumers that you are best in the class, isn’t it?With us, you can expect to enjoy superlative, highly effective and easy-to-use Android apps that can provide your clients with rich user experience.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="ios" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...</div>
                 </div>
+
+                <!-- Tabs here -->
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#android" type="button" role="tab" >Android</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#ios" type="button" role="tab">iOS</button>
+                    </li>
+                </ul>
             </div>
         </section>
 
-        <!--  -->
-        <section class="block services">
-            <div class="container-fluid">
-                <div class="pTitleAlt">
-                    <p>Who we Serve</p>
-                    <h3>Industries</h3>
+        <!-- Industries -->
+        <section class="block solutions services bg-dark">
+            <div class="container">
+                <div class="pTitle text-center">
+                    <b>Who we Serve</b>
+                    <h4>Industries</h4>
                 </div>
 
                 <div class="wws">
@@ -127,43 +167,85 @@
             </div>
         </section>
 
-        <!--  -->
-        <section class="block steps">
-            <div class="container-fluid">
-                <div class="pTitleAlt pTitleAlt-light">
-                    <p>Why do you need</p>
-                    <h3>Mobile App</h3>
+        <!-- Clients -->
+        <section class="block clients-alt">
+            <div class="container">
+
+                <div class="pTitle text-center">
+                    <b>Clients</b>
+                    <h4>Trusted by Business</h4>
                 </div>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, commodi nobis fugit ut, similique pariatur ex numquam placeat, sunt blanditiis quis! Vitae reprehenderit rem sed officiis quidem. A, repellat quod.</p>
+                <div class="clientsAlt caSlide1">
+                    <div class="caBox">
+                        <img src="img/clients/hero.png" alt="">
+                    </div>
+                    <div class="caBox">
+                        <img src="img/clients/educomp.png" alt="">
+                    </div>
+                    <div class="caBox">
+                        <img src="img/clients/trident.png" alt="">
+                    </div>
+                    <div class="caBox">
+                        <img src="img/clients/digiscape.png" alt="">
+                    </div>
+                </div>
+
+                <div class="clientsAlt mt-3 caSlide2">
+                    <div class="caBox">
+                        <img src="img/clients/hero.png" alt="">
+                    </div>
+                    <div class="caBox">
+                        <img src="img/clients/educomp.png" alt="">
+                    </div>
+                    <div class="caBox">
+                        <img src="img/clients/trident.png" alt="">
+                    </div>
+                    <div class="caBox">
+                        <img src="img/clients/digiscape.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  -->
+        <section class="block whatYouNeed bg-dark">
+            <div class="container">
+
+                <div class="cTitle text-center">
+                    <b>Why do you need</b>
+                    <h4>Mobile App</h4>
+                </div>
+
+                <p class="text-center">Even though it sounds like nothing, The mobile application can offer small changes that can leave a strong impression on the businesses. The mobile application can help businesses to send off compelling messages to the target user base for a business relationship to generate more leads. These messages are conveyed accurately. With the goal that visitors can turn into a potential user base. Even a push notification can turn into the greatest way of communication that only mobile applications can offer.</p>
 
                 <div class="stepsList">
                     <div class="slBox">
-                        <img src="img/steps/" alt="">
+                        <img src="img/mobile/steps/1.png" alt="">
                         <p>Work on User Expectation</p>
                     </div>
                     <div class="slBox">
-                        <img src="img/steps/" alt="">
+                        <img src="img/mobile/steps/2.png" alt="">
                         <p>Strengthening reliable consumers base</p>
                     </div>
                     <div class="slBox">
-                        <img src="img/steps/" alt="">
+                        <img src="img/mobile/steps/3.png" alt="">
                         <p>Help in business growth and deals</p>
                     </div>
                     <div class="slBox">
-                        <img src="img/steps/" alt="">
+                        <img src="img/mobile/steps/4.png" alt="">
                         <p>Help in business growth and deals</p>
                     </div>
                     <div class="slBox">
-                        <img src="img/steps/" alt="">
+                        <img src="img/mobile/steps/5.png" alt="">
                         <p>Help in business growth and deals</p>
                     </div>
                     <div class="slBox">
-                        <img src="img/steps/" alt="">
+                        <img src="img/mobile/steps/6.png" alt="">
                         <p>Help in business growth and deals</p>
                     </div>
                     <div class="slBox">
-                        <img src="img/steps/" alt="">
+                        <img src="img/mobile/steps/7.png" alt="">
                         <p>Help in business growth and deals</p>
                     </div>
                 </div>

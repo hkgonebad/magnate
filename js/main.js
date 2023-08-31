@@ -221,6 +221,44 @@ $(function() {
         });
     }
 
+    // Mobile - Clients Slider
+    if ($('.caSlide1').length > 0) {
+
+        $('.caSlide1').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            dots: false,
+            autoplay: true,
+            autoplayDuration: 3000,
+
+            responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                }}
+            ]
+        });
+    }
+
+    // Mobile - Clients Slider
+    if ($('.caSlide2').length > 0) {
+
+        $('.caSlide2').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            dots: false,
+            autoplay: true,
+            autoplayDuration: 2500,
+
+            responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                }}
+            ]
+        });
+    }
+
     // Solutions
     // Get all the solutionBox elements
     const solutionBoxes = $(".solutionBox");
