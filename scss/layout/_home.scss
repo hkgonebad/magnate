@@ -238,6 +238,7 @@
 		transition: all ease-in-out 250ms;
 
 		img{
+			margin: 0 auto;
 			margin-bottom: 10px;
 			height: 70px;
 		}
@@ -275,6 +276,13 @@
 			}
 
 		}
+	}
+}
+
+.servicesSlide{
+
+	.solutionBox{
+		margin: 0 10px;
 	}
 }
 

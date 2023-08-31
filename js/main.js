@@ -264,6 +264,36 @@ $(function() {
         });
     }
 
+    // Services Slide
+    if ($('.servicesSlide').length > 0) {
+
+        $('.servicesSlide').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            dots: true,
+            arrows: true,
+            autoplay: true,
+            autoplayDuration: 2500,
+
+            responsive: [{
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 3,
+                }},
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                }},
+            {
+                breakpoint: 320,
+                settings: {
+                    slidesToShow: 1,
+                }}
+            ]
+        });
+    }
+
     // Solutions
     // Get all the solutionBox elements
     const solutionBoxes = $(".solutionBox");
