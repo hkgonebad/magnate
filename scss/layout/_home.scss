@@ -217,6 +217,10 @@
 
 	clip-path: polygon(0% 5%, 100% 0%, 100% 100%, 0% 100%);
 
+	@include media-breakpoint-down(md){
+		clip-path: polygon(0% 2%, 100% 0%, 100% 100%, 0% 100%);
+	}
+
 	&:before{
 		content: '';
 		background-image: url('../img/bg/ctriangle-left.png');
@@ -228,56 +232,78 @@
 		height: 300px;
     	width: 100%;
 	}
+}
 
-	.solutionBox{
-		text-align: center;
-		border: 1px solid #1d4158;
-		border-radius: 4px;
-		padding: 15px;
+.solutionBox{
+	text-align: center;
+	border: 1px solid #1d4158;
+	border-radius: 4px;
+	padding: 15px;
+	margin-bottom: 15px;
+	transition: all ease-in-out 250ms;
+
+	img{
+		margin: 0 auto;
+		margin-bottom: 10px;
+		height: 70px;
+	}
+
+	h4{
+		font-size: 20px;
 		margin-bottom: 15px;
+		color: $warning;
 		transition: all ease-in-out 250ms;
 
+		@include media-breakpoint-up(lg){
+			min-height: 48px;
+		}
+	}
+
+	p{
+		font-size: 15px;
+		padding: 0 10px;
+		display: -webkit-box;
+		-webkit-line-clamp: 4;
+		-webkit-box-orient: vertical;  
+		overflow: hidden;
+		transition: all ease-in-out 250ms;
+	}
+
+	&:hover{
+		background: $cyan;
+
+		h4, p{
+			color: #000;
+		}
+
+		.link-text{
+			color: #fff;
+		}
+
+	}
+}
+
+.rAndr{
+
+	.rImg{
+		@include media-breakpoint-down(md){
+			margin: 15px 0;
+		}
+
 		img{
-			margin: 0 auto;
-			margin-bottom: 10px;
-			height: 70px;
+			width: 100%;
 		}
+	}
 
-		h4{
-			font-size: 20px;
-			margin-bottom: 15px;
-			color: $warning;
-			transition: all ease-in-out 250ms;
-
-			@include media-breakpoint-up(lg){
-				min-height: 48px;
-			}
-		}
-
+	.rDetails{
 		p{
-			font-size: 15px;
-			padding: 0 10px;
-			display: -webkit-box;
-			-webkit-line-clamp: 4;
-			-webkit-box-orient: vertical;  
-			overflow: hidden;
-			transition: all ease-in-out 250ms;
-		}
-
-		&:hover{
-			background: $cyan;
-
-			h4, p{
-				color: #000;
+			b{
+				color: $primary;
 			}
-
-			.link-text{
-				color: #fff;
-			}
-
 		}
 	}
 }
+
 
 .servicesSlide{
 
