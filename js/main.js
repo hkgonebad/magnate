@@ -227,6 +227,7 @@ $(function() {
         $('.caSlide1').slick({
             slidesToShow: 5,
             slidesToScroll: 1,
+            infinite: true,
             dots: false,
             autoplay: true,
             autoplayDuration: 3000,
@@ -246,6 +247,7 @@ $(function() {
         $('.caSlide2').slick({
             slidesToShow: 5,
             slidesToScroll: 1,
+            infinite: true,
             dots: false,
             autoplay: true,
             autoplayDuration: 2500,

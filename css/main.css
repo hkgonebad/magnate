@@ -30868,6 +30868,16 @@ a {
 }
 
 /* line 158, ../laragon/www/magnate/scss/layout/_mobile.scss */
+.clients-alt .clientsAlt .caSlide1 {
+  margin: 0 5px;
+}
+
+/* line 162, ../laragon/www/magnate/scss/layout/_mobile.scss */
+.clients-alt .clientsAlt .caSlide2 {
+  margin: 0 10px;
+}
+
+/* line 166, ../laragon/www/magnate/scss/layout/_mobile.scss */
 .clients-alt .clientsAlt .caBox {
   border: 1px solid #e1e1e1;
   padding: 15px;
@@ -30875,9 +30885,42 @@ a {
   border-radius: 4px;
 }
 
-/* line 164, ../laragon/www/magnate/scss/layout/_mobile.scss */
+/* line 172, ../laragon/www/magnate/scss/layout/_mobile.scss */
 .clients-alt .clientsAlt .caBox img {
-  height: 60px;
+  max-height: 60px;
+  margin: 0 auto;
+}
+
+/* line 182, ../laragon/www/magnate/scss/layout/_mobile.scss */
+.whatYouNeed .stepsList {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* line 187, ../laragon/www/magnate/scss/layout/_mobile.scss */
+.whatYouNeed .stepsList .slBox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: column;
+  text-align: center;
+  border: 2px solid #13828D;
+  border-radius: 50%;
+  padding: 15px;
+  width: 150px;
+  height: 150px;
+}
+
+/* line 200, ../laragon/www/magnate/scss/layout/_mobile.scss */
+.whatYouNeed .stepsList .slBox img {
+  margin-bottom: 8px;
+}
+
+/* line 204, ../laragon/www/magnate/scss/layout/_mobile.scss */
+.whatYouNeed .stepsList .slBox p {
+  font-size: 12px;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=main.css.map */
