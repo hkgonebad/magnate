@@ -120,41 +120,44 @@
 }
 
 // Solutions
-.solutions{
+.wws{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
 
-    .wws{
-        display: grid;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
+    @include media-breakpoint-down(md){
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    @include media-breakpoint-down(sm){
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .wwsBox{
+        text-align: center;
+        border: 1px dotted #ffffff29;
+        padding: 20px;
 
         @include media-breakpoint-down(md){
-            grid-template-columns: repeat(3, minmax(0, 1fr));
+            padding: 15px;
         }
 
-        @include media-breakpoint-down(sm){
-            grid-template-columns: repeat(2, minmax(0, 1fr));
+        img{
+            margin-bottom: 15px;
         }
 
-        .wwsBox{
-            text-align: center;
-            border: 1px dotted #ffffff29;
-            padding: 20px;
+        h4{
+            font-size: 16px;
+            font-weight: 600;
+            color: $teal;
+        }
 
-            @include media-breakpoint-down(md){
-                padding: 15px;
-            }
-
-            img{
-                margin-bottom: 15px;
-            }
-
-            h4{
-                font-size: 16px;
-                font-weight: 600;
-                color: $teal;
-            }
+        p{
+            font-size: 13px;
+            margin: 0;
         }
     }
 }
+
 
 // Clients-
 .clients-alt{
