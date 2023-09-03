@@ -93,15 +93,19 @@
             width: 150px;
             height: 150px;
             flex-shrink: 0;
+            padding: 0 15px;
 
             img{
                 width: auto;
+                height: 55px;
                 margin-bottom: 10px;
                 flex-shrink: 0;
             }
 
             span{
                 display: inline-block;
+                font-size: 13px;
+                line-height: 16px;
             }
         }
     }
