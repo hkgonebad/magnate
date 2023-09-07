@@ -107,6 +107,29 @@
     }
 }
 
+.list-unstyled{
+    position: relative;
+    list-style: none;
+
+    li{
+        font-size: 15px;
+        margin: 5px 0;
+        padding: 2px 0;
+        position: relative;
+        padding-left: 20px;
+
+        &:before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            height: 8px;
+            width: 8px;
+            background: $teal;
+        }
+    }
+}
+
 .accordion{
     background: transparent;
     color: #fff;
