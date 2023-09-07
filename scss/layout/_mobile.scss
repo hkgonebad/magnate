@@ -139,7 +139,7 @@
     .wwsBox{
         text-align: center;
         border: 1px dotted #ffffff29;
-        padding: 20px;
+        padding: 30px 20px;
 
         @include media-breakpoint-down(md){
             padding: 15px;
@@ -147,6 +147,9 @@
 
         img{
             margin-bottom: 15px;
+            max-height: fit-content;
+            max-width: fit-content;
+            height: 100px;
         }
 
         h4{
