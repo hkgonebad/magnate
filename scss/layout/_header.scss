@@ -6,6 +6,29 @@ $navbarHeight: 70px;
     display: flex;
     align-items: stretch;
     // overflow: hidden;
+    z-index: 9999;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 250ms ease-in-out;
+
+    &.is-fixed{
+        position: fixed;
+        top: 0;
+
+        .topHeader{
+            display: none;
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        .logo{
+            img{
+                height: 48px;
+            }
+        }
+    }
 
     .mhLeft{
 
@@ -21,7 +44,7 @@ $navbarHeight: 70px;
             position: absolute;
             z-index: 2;
             left: 0px;
-            top: 0;
+            bottom: 0;
             width: 0px;
             height: 0px;
             border-top: 115px solid #f7f7f7;
@@ -45,6 +68,7 @@ $navbarHeight: 70px;
         img{
             padding: 0 20px;
             height: 70px;
+            transition: all ease-in-out 250ms;
 
             @include media-breakpoint-down(lg){
                 height: auto;
@@ -58,6 +82,9 @@ $navbarHeight: 70px;
         align-items: stretch;
         justify-content: center;
         height: 45px;
+        visibility: visible;
+        opacity: 1;
+        transition: all ease-in-out 250ms;
 
         .thWelcome{
             flex: 1;

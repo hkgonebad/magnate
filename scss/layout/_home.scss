@@ -20,7 +20,13 @@
 				max-width: 80%;
 
 				@include media-breakpoint-down(md){
+					position: relative;
 					max-width: 100%;
+					top: 0;
+					padding: 20px 15px;
+					color: #fff;
+					transform: translate(0px, 0px);
+					background: $teal;
 				}
 
 				.container{
@@ -45,6 +51,7 @@
 
 					@include media-breakpoint-down(md){
 						font-size: 30px;
+						color: #f7f7f7;
 					}
 				}
 
@@ -176,8 +183,11 @@
 		h4{
 			font-size: 40px;
 			font-weight: 600;
-
 			margin-bottom: 30px;
+
+			@include media-breakpoint-down(md){
+				font-size: 26px;
+			}
 		}
 
 		p{
@@ -256,6 +266,10 @@
 
 		@include media-breakpoint-up(lg){
 			min-height: 48px;
+		}
+
+		@include media-breakpoint-down(md){
+			font-size: 18px;
 		}
 	}
 
@@ -441,7 +455,8 @@
 	.isBox{
 		display: flex;
 		align-items: flex-start;
-		background: #fff;
+		background: #ffffff26;
+    	border: 1px solid #e1e1e1;
 
 		.isImg{
 			// margin-top: -60px;

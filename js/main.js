@@ -10,7 +10,7 @@ AOS.init({
 //Header
 var headerFixed = function () {
     if ($("header").hasClass("header-fixed")) {
-      var nav = $("#header");
+      var nav = $(".mainHeader");
 
       if (nav.length) {
         var offsetTop = nav.offset().top,
