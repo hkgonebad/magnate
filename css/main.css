@@ -29290,32 +29290,34 @@ body {
   font-weight: 400;
   color: #33363c;
   background: #fafafa;
+  min-height: 100vh;
+  height: 100%;
 }
 
-/* line 14, ../laragon/www/magnate/scss/layout/_default.scss */
+/* line 16, ../laragon/www/magnate/scss/layout/_default.scss */
 a {
   transition: all ease-in-out 300ms;
 }
 
-/* line 18, ../laragon/www/magnate/scss/layout/_default.scss */
+/* line 20, ../laragon/www/magnate/scss/layout/_default.scss */
 .container {
   position: relative;
 }
 
 @media (max-width: 991.98px) {
-  /* line 18, ../laragon/www/magnate/scss/layout/_default.scss */
+  /* line 20, ../laragon/www/magnate/scss/layout/_default.scss */
   .container {
     max-width: 100%;
   }
 }
 
-/* line 28, ../laragon/www/magnate/scss/layout/_default.scss */
+/* line 30, ../laragon/www/magnate/scss/layout/_default.scss */
 .block {
   padding: 80px 0;
   position: relative;
 }
 
-/* line 32, ../laragon/www/magnate/scss/layout/_default.scss */
+/* line 34, ../laragon/www/magnate/scss/layout/_default.scss */
 .block .secBg {
   position: absolute;
   left: 0;
@@ -29324,24 +29326,24 @@ a {
   width: 100%;
 }
 
-/* line 39, ../laragon/www/magnate/scss/layout/_default.scss */
+/* line 41, ../laragon/www/magnate/scss/layout/_default.scss */
 .block .secBg .container {
   position: relative;
   z-index: 3;
 }
 
-/* line 45, ../laragon/www/magnate/scss/layout/_default.scss */
+/* line 47, ../laragon/www/magnate/scss/layout/_default.scss */
 .block.bg-dark {
   background-color: #2b2e34;
   color: #fff;
 }
 
-/* line 50, ../laragon/www/magnate/scss/layout/_default.scss */
+/* line 52, ../laragon/www/magnate/scss/layout/_default.scss */
 .block.bg-gray {
   background-color: #eeeeee;
 }
 
-/* line 57, ../laragon/www/magnate/scss/layout/_default.scss */
+/* line 59, ../laragon/www/magnate/scss/layout/_default.scss */
 .btn.btn-main {
   text-transform: uppercase;
   background: #52cfdb;
@@ -29352,7 +29354,7 @@ a {
 }
 
 @media (min-width: 768px) {
-  /* line 57, ../laragon/www/magnate/scss/layout/_default.scss */
+  /* line 59, ../laragon/www/magnate/scss/layout/_default.scss */
   .btn.btn-main {
     padding: 10px 25px;
     font-size: 16px;
@@ -29360,19 +29362,19 @@ a {
   }
 }
 
-/* line 71, ../laragon/www/magnate/scss/layout/_default.scss */
+/* line 73, ../laragon/www/magnate/scss/layout/_default.scss */
 .btn.btn-main:hover {
   background: #4190C2;
 }
 
-/* line 76, ../laragon/www/magnate/scss/layout/_default.scss */
+/* line 78, ../laragon/www/magnate/scss/layout/_default.scss */
 .btn.btn-outline-info {
   border-radius: 0;
   font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  /* line 76, ../laragon/www/magnate/scss/layout/_default.scss */
+  /* line 78, ../laragon/www/magnate/scss/layout/_default.scss */
   .btn.btn-outline-info {
     padding: 10px 25px;
     font-size: 15px;
@@ -29380,12 +29382,12 @@ a {
   }
 }
 
-/* line 86, ../laragon/www/magnate/scss/layout/_default.scss */
+/* line 88, ../laragon/www/magnate/scss/layout/_default.scss */
 .btn.btn-outline-info:hover {
   color: #fff;
 }
 
-/* line 92, ../laragon/www/magnate/scss/layout/_default.scss */
+/* line 94, ../laragon/www/magnate/scss/layout/_default.scss */
 .btn-toggle {
   background: #13828D;
   height: 44px;
@@ -29401,7 +29403,7 @@ a {
   white-space: nowrap;
 }
 
-/* line 106, ../laragon/www/magnate/scss/layout/_default.scss */
+/* line 108, ../laragon/www/magnate/scss/layout/_default.scss */
 .btn-toggle i {
   border-radius: 50%;
   background: #fff;
@@ -29416,33 +29418,33 @@ a {
   transition: all ease-in-out 250ms;
 }
 
-/* line 120, ../laragon/www/magnate/scss/layout/_default.scss */
+/* line 122, ../laragon/www/magnate/scss/layout/_default.scss */
 .btn-toggle:hover {
   color: #13828D;
   background: #fff;
   border-color: #13828D;
 }
 
-/* line 125, ../laragon/www/magnate/scss/layout/_default.scss */
+/* line 127, ../laragon/www/magnate/scss/layout/_default.scss */
 .btn-toggle:hover i {
   color: #fff;
   background: #444;
 }
 
-/* line 132, ../laragon/www/magnate/scss/layout/_default.scss */
+/* line 134, ../laragon/www/magnate/scss/layout/_default.scss */
 .link-text {
   color: #13828D;
   font-weight: 500;
   font-size: 14px;
 }
 
-/* line 137, ../laragon/www/magnate/scss/layout/_default.scss */
+/* line 139, ../laragon/www/magnate/scss/layout/_default.scss */
 .link-text i {
   transition: all ease-in-out 250ms;
   transform: translateX(0);
 }
 
-/* line 144, ../laragon/www/magnate/scss/layout/_default.scss */
+/* line 146, ../laragon/www/magnate/scss/layout/_default.scss */
 .link-text:hover i {
   transform: translateX(3px);
 }
@@ -31068,6 +31070,106 @@ a {
   padding-left: 30px;
   font-weight: 300;
   font-size: 15px;
+}
+
+/* fluid 5 columns */
+/* line 2, ../laragon/www/magnate/scss/layout/_portfolio.scss */
+.grid-sizer,
+.grid-item {
+  width: 20%;
+}
+
+/* 2 columns */
+/* line 5, ../laragon/www/magnate/scss/layout/_portfolio.scss */
+.grid-item--width2 {
+  width: 40%;
+}
+
+/* line 14, ../laragon/www/magnate/scss/layout/_portfolio.scss */
+.portfolioGrid .pfBox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+/* line 23, ../laragon/www/magnate/scss/layout/_portfolio.scss */
+.portfolioGrid .pfBox .pfImage {
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 27, ../laragon/www/magnate/scss/layout/_portfolio.scss */
+.portfolioGrid .pfBox .pfImage img {
+  transition: all ease-in-out 250ms;
+  transform: scale(1);
+}
+
+/* line 33, ../laragon/www/magnate/scss/layout/_portfolio.scss */
+.portfolioGrid .pfBox .pfDetails {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background: #13828dd1;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all ease-in-out 250ms;
+}
+
+/* line 54, ../laragon/www/magnate/scss/layout/_portfolio.scss */
+.portfolioGrid .pfBox .pfDetails h4, .portfolioGrid .pfBox .pfDetails .h4 {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transform: translateY(300px);
+  transition: all ease-in-out 450ms;
+}
+
+/* line 62, ../laragon/www/magnate/scss/layout/_portfolio.scss */
+.portfolioGrid .pfBox .pfDetails p {
+  font-size: 14px;
+  font-weight: 300;
+  opacity: 0;
+  transform: translateY(200px);
+  transition: all ease-in-out 550ms;
+}
+
+/* line 70, ../laragon/www/magnate/scss/layout/_portfolio.scss */
+.portfolioGrid .pfBox .pfDetails a {
+  font-size: 26px;
+  color: #F2DB57;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all ease-in-out 650ms;
+}
+
+/* line 82, ../laragon/www/magnate/scss/layout/_portfolio.scss */
+.portfolioGrid .pfBox:hover .pfDetails {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* line 86, ../laragon/www/magnate/scss/layout/_portfolio.scss */
+.portfolioGrid .pfBox:hover .pfDetails h4, .portfolioGrid .pfBox:hover .pfDetails .h4, .portfolioGrid .pfBox:hover .pfDetails p, .portfolioGrid .pfBox:hover .pfDetails a {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+/* line 94, ../laragon/www/magnate/scss/layout/_portfolio.scss */
+.portfolioGrid .pfBox:hover .pfImage img {
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=main.css.map */
