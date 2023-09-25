@@ -29985,7 +29985,6 @@ a {
   background-image: url("../img/bg/dot-bg.png");
   background-repeat: no-repeat;
   background-position-y: bottom;
-  background-size: cover;
   overflow: hidden;
   padding-bottom: 60px;
   clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);

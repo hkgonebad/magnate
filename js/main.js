@@ -1,6 +1,8 @@
 AOS.init({
     easing: 'ease-out-back',
-    duration: 1500
+    duration: 1500,
+    disable: 'mobile',
+    offset: 10,
 });
 
 // var Scrollbar = window.Scrollbar;
