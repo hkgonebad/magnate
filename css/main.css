@@ -29292,7 +29292,7 @@ body {
   color: #33363c;
   background: #fafafa;
   min-height: 100vh;
-  height: 100%;
+  width: 100vw;
 }
 
 /* line 16, ../laragon/www/magnate/scss/layout/_default.scss */
