@@ -2,7 +2,7 @@ AOS.init({
     easing: 'ease-out-back',
     duration: 1500,
     disable: 'mobile',
-    offset: 10,
+    offset: 20
 });
 
 // var Scrollbar = window.Scrollbar;
