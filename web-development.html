@@ -12,7 +12,88 @@
 <body>
 
     <!--  -->
-    <div id="header"></div>
+    <div id="header">
+	
+	<header class="header-fixed">
+    <div class="mainHeader">
+        <div class="mhLeft">
+            <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+        </div>
+        
+        <div class="mhRight">
+            <div class="topHeader">
+                <div class="thWelcome">
+                    <p>Welcome to Magnate Web Solutions INC</p>
+                </div>
+                <div class="thSocial">
+                    <a href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#!"><i class="fab fa-instagram"></i></a>
+                    <a href="#!"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#!"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+    
+            <!--  -->
+            <nav class="navbar navbar-expand-lg">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services <i class="fa fa-angle-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="web-development.html">Web Development</a></li>
+                                    <li><a class="dropdown-item" href="mobile-development.html">Mobile App Development</a></li>
+                                    <li><a class="dropdown-item" href="blockchain.html">Blockchain Development</a></li>
+                                    <li><a class="dropdown-item" href="staffing.html">Staffing</a></li>
+                                    <li><a class="dropdown-item" href="#">Digital Marketing</a></li>
+                                    <li><a class="dropdown-item" href="#">Data Services</a></li>
+                                    <li><a class="dropdown-item" href="project-management.html">Project Management</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Solutions <i class="fa fa-angle-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="hotel-management.html">Hotel Management</a></li>
+                                    <li><a class="dropdown-item" href="payroll.html">Payroll System</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                        <div class="rightActions" >
+                            <div class="searchBtn" role="search">
+                                <button class="btn " type="button"><i class="fa fa-search"></i></button>
+                            </div>
+                            <div class="ctaTollfree">
+                                <img src="img/icons/cta.png" alt="">
+                                <p>Call Anytime<span>1800 878 4535</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+	
+	</div>
 
     <!--  -->
     <main>
@@ -57,9 +138,29 @@
         <section class="block overview about services bg-dark">
             <div class="container">
 
-                <div class="pTitle text-center">
-                    <h3>Overview</h3>
-                    <p>Agile, Scalable & Cost Effective Solution Tailored For Your Business</p>
+                <div class="row">
+                    <div class="col-md-5" data-aos="fade-right">
+                        <div class="ovImg">
+                            <img src="img/web/overview.png" alt="">
+                        </div>
+                    </div>
+					
+					<div class="col-md-1">
+					</div>
+					
+                    <div class="col-md-6" data-aos="fade-left">
+                        <div class="ovDetails">
+                            <div class="pTitle">
+                                <b>_ Web Development</b>
+                                <h3>Overview</h3>
+                            </div>
+
+                            <p>MWS facilitates the field of Hospital Management through their software application, which enables hospitals to provide optimal healthcare solutions. The Hospital Management Software integrates information from various sources within the hospital environment, analyzing and storing data in appropriate formats for service providers to utilize as needed.</p>
+
+                            <p>The software unifies legal details, regulations, standards, asset details, employee information, administrative details, and patient medical records, ensuring the effective operation of hospitals. Additionally, the Hospital Management Software processes information from different departments, labs, and other agencies, automatically eliminating errors that may occur in manual processes. MWS ensures that healthcare and hospital providers utilize the HMS application to deliver high-quality healthcare to society.</p>
+                            
+                        </div>
+                    </div>
                 </div>
 
                 <div id="workTogether"></div>
@@ -69,14 +170,14 @@
                     <h4>Technology & Platform</h4>
                 </div>
 
-                <div class="wws">
+                <div class="wws"  data-aos="fade-up">
                     <div class="wwsBox">
-                        <img src="" alt="">
+                        <img src="img/web/technology/seo.png" alt="">
                         <h4>SEO</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
                     </div>
                     <div class="wwsBox">
-                        <img src="" alt="">
+                        <img src="img/web/technology/content-writing.png" alt="">
                         <h4>Content Writing</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
                     </div>
@@ -86,11 +187,73 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
                     </div>
                     <div class="wwsBox">
-                        <img src="" alt="">
+                        <img src="img/web/technology/socialmedia_marketing.png" alt="">
                         <h4>Social Media Optimization</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
                     </div>
+					
+					<div class="wwsBox">
+                        <img src="img/web/technology/payperclick.png" alt="">
+                        <h4>Pay Per Click</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                    </div>
+                    <div class="wwsBox">
+                        <img src="" alt="">
+                        <h4>Website Development</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                    </div>
+                    <div class="wwsBox">
+                        <img src="" alt="">
+                        <h4>Branding</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                    </div>
+                    <div class="wwsBox">
+                        <img src="img/web/technology/mediaplanning.png" alt="">
+                        <h4>Media Plannign Service</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                    </div>
+					
+					<div class="wwsBox">
+                        <img src="img/web/technology/webdesign.png" alt="">
+                        <h4>Website Design</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                    </div>
+                    <div class="wwsBox">
+                        <img src="img/web/technology/email.png" alt="">
+                        <h4>Email Marketing</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                    </div>
+                    <div class="wwsBox">
+                        <img src="img/web/technology/uiux.png" alt="">
+                        <h4>UI / UX</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                    </div>
+                    <div class="wwsBox">
+                        <img src="" alt="">
+                        <h4>Graphic Design</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                    </div>
                 </div>
+				
+				
+				<!--  -->
+                <div id="workTogether2" class="py-3 my-2">
+				
+					<div class="workTogether">
+					<div class="wtText">
+						<h3>Lets <b>Work Together</b></h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
+					<div class="btns">
+						<a href="#!" class="btn btn-toggle">Get in Touch <i class="fa fa-arrow-right"></i></a>
+					</div>
+					</div>
+				
+				</div>
+
+                <!--  -->
+				
+				
             </div>
         </section>
 
@@ -103,7 +266,7 @@
                     <h4>Trusted by Business</h4>
                 </div>
 
-                <div class="clientsAlt caSlide1">
+                <div class="clientsAlt caSlide1" data-aos="fade-up" data-aos-delay="100">
                     <div class="caBox">
                         <img src="img/clients/hero.png" alt="">
                     </div>
@@ -130,7 +293,7 @@
                     </div>
                 </div>
 
-                <div class="clientsAlt mt-3 caSlide2">
+                <div class="clientsAlt mt-3 caSlide2" data-aos="fade-up" data-aos-delay="200">
                     <div class="caBox">
                         <img src="img/clients/hero.png" alt="">
                     </div>
@@ -161,59 +324,63 @@
 
         <!--  -->
         <!-- Our Soluutions -->
-        <section class="block solutions bg-dark">
+        <section class="block whatYouNeed bg-dark">
             <div class="container">
-                <div class="pTitle pTitleBtn">
-                    <b>Services</b>
-                    <h3>Domain we Serve:</h3>
 
-                    <a href="#!" class="link-text">View All <i class="fa fa-arrow-right"></i></a>
+                <div class="pTitle text-center">
+                    <h4>What we DO?</h4>
+                    <b>Our Experties</b>
                 </div>
 
-                <div class="servicesSlide">
-                    <div class="item">
-                        <div class="solutionBox">
-                            <img src="img/home/solutions/web-orange.svg" alt="">
-                            <h4>E-Commerce</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus neque officiis natus repellendus similique? Dolorem consequatur nihil ipsum quas, voluptatem aut et maiores accusantium earum fugit eaque, facere neque nobis.</p>
-                            <a href="#!" class="link-text">Learn More <i class="fa fa-arrow-right"></i></a>
-                        </div>
+                <p class="text-center mb-5">At MWS, we strive to transform your dream into reality using persuasive design choices and guide you to new heights by creating a mobile-friendly website that truly reflects your brand value and business ethos.</p>
+
+                <div class="stepsDetails">
+                    <div class="sdBox">
+                        <h4><span>1.</span>Importance of Website</h4>
+                        <p>Your website says a lot about your company, to be precise, how efficiently it is run. A website featuring smart look and sleek navigation easily clip to visitors’ attention. On other hand, a sloppy and backdated look in combination with slow and unsatisfactory navigation is unlikely to bring you up-to-mark bounce off your marketing investment.</p>
                     </div>
-                    <div class="item">
-                        <div class="solutionBox">
-                            <img src="img/home/solutions/web-orange.svg" alt="">
-                            <h4>Banking</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus neque officiis natus repellendus similique? Dolorem consequatur nihil ipsum quas, voluptatem aut et maiores accusantium earum fugit eaque, facere neque nobis.</p>
-                            <a href="#!" class="link-text">Learn More <i class="fa fa-arrow-right"></i></a>
-                        </div>
+                    <div class="sdBox">
+                        <h4><span>2.</span>Why Website is important !</h4>
+                        <p>What is more and worse, it weakens your brand reputation in the market. We have expert developers at MWS, who first consult with our clients to develop in-depth understanding of their mobile web development needs and then only pencil in their own thoughts and tech effort to thread the ultimate reality.</p>
                     </div>
-                    <div class="item">
-                        <div class="solutionBox">
-                            <img src="img/home/solutions/web-orange.svg" alt="">
-                            <h4>Health</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus neque officiis natus repellendus similique? Dolorem consequatur nihil ipsum quas, voluptatem aut et maiores accusantium earum fugit eaque, facere neque nobis.</p>
-                            <a href="#!" class="link-text">Learn More <i class="fa fa-arrow-right"></i></a>
-                        </div>
+                    <div class="sdBox">
+                        <h4><span>3.</span>	Why MWS</h4>
+                        <p>Present is a fleeting moment, quickly skidding into the hollow of past. So we think about future only. We want you to lace the lead in a race to be a numerouno in your niche. Our experts always have a feel of the pulse where the present market trend will be heading to and on basis of their analysis, they prepare result-oriented solutions that are tailored-made just to serve your needs.</p>
                     </div>
-                    <div class="item">
-                        <div class="solutionBox">
-                            <img src="img/home/solutions/web-orange.svg" alt="">
-                            <h4>Utility & Smart City</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus neque officiis natus repellendus similique? Dolorem consequatur nihil ipsum quas, voluptatem aut et maiores accusantium earum fugit eaque, facere neque nobis.</p>
-                            <a href="#!" class="link-text">Learn More <i class="fa fa-arrow-right"></i></a>
-                        </div>
+                    <div class="sdBox">
+                        <h4><span>4.</span>Why Choose Us</h4>
+                        <p>Our developers are rich in futuristic and out-of-pack ideas. They are armed with good knowledge of most popular and latest programming software applications. But most importantly, they are audacious and adventurous to burst into unfamiliar territory to toy with new ideas, whipping up something exceptional, excellent but highly effective to convert traffic into leads.</p>
                     </div>
-                    <div class="item">
-                        <div class="solutionBox">
-                            <img src="img/home/solutions/web-orange.svg" alt="">
-                            <h4>Utility & Smart City</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus neque officiis natus repellendus similique? Dolorem consequatur nihil ipsum quas, voluptatem aut et maiores accusantium earum fugit eaque, facere neque nobis.</p>
-                            <a href="#!" class="link-text">Learn More <i class="fa fa-arrow-right"></i></a>
-                        </div>
+                    <div class="sdBox">
+                        <h4><span>5.</span>Your Vision, Our Mission</h4>
+                        <p>We believe in your vision and make it a mission for us to come up with a result up to the saturated level of satisfaction. Success along a liner way is very predictable and being different, we deliver more than your satisfaction.</p>
+                    </div>
+					<div class="sdBox">
+                        <h4><span>6.</span>Customer service</h4>
+                        <p>Without being different, it is pretty unlikely to be noticed and notch up success. There are more than 500,00,000 WEBSITES AND PORTALS available in the market believed to worth $40 billion by 2020, which throws a challenge for anyone to stand tall in the market. Adaption is the key to survival and we guide you how to do that.</p>
                     </div>
                 </div>
 
-                <div id="workTogether"></div>
+                
+                <!--  -->
+                <div id="workTogether2" class="py-3 my-2">
+				
+					<div class="workTogether">
+					<div class="wtText">
+						<h3>Lets <b>Work Together</b></h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
+					<div class="btns">
+						<a href="#!" class="btn btn-toggle">Get in Touch <i class="fa fa-arrow-right"></i></a>
+					</div>
+					</div>
+				
+				</div>
+
+                <!--  -->
+
+                
+
             </div>
         </section>
 

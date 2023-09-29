@@ -130,6 +130,36 @@
     }
 }
 
+.icon-li{
+    position: relative;
+    list-style: none;
+    padding-left: 0;
+
+    li{
+        font-size: 18px;
+        margin: 8px 0 15px;
+        padding: 2px 0;
+        position: relative;
+        padding-left: 30px;
+        font-weight: 300;
+        
+        i{
+            color: $teal;
+            position: absolute;
+            left: 0;
+            top: 10px;
+            font-size: 20px;
+        }
+
+        b{
+            font-size: 20px;
+            font-weight: 600;
+            color: $teal;
+
+        }
+    }
+}
+
 .accordion{
     background: transparent;
     color: #fff;
@@ -254,6 +284,34 @@
     .btns{
         @include media-breakpoint-down(sm){
             margin-top: 15px;
+        }
+    }
+}
+
+.slick-dots{
+
+    li{
+        height: auto;
+        width: auto;
+
+        button{
+            height: 5px;
+            width: 5px;
+            border-radius: 50%;
+            background: $teal;
+            transition: all ease-in-out 250ms;
+
+            &:before{
+                display: none;
+            }
+        }
+
+        &.slick-active{
+            button{
+                width: 30px;
+                border-radius: 4px;
+                background: #fff;
+            }
         }
     }
 }

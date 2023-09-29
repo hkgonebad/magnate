@@ -1,7 +1,18 @@
+AOS.init({
+    easing: 'ease-out-back',
+    duration: 1500,
+    disable: 'mobile',
+    offset: 10,
+});
+
+// var Scrollbar = window.Scrollbar;
+
+// Scrollbar.init(document.querySelector('body'));
+
 //Header
 var headerFixed = function () {
     if ($("header").hasClass("header-fixed")) {
-      var nav = $("#header");
+      var nav = $(".mainHeader");
 
       if (nav.length) {
         var offsetTop = nav.offset().top,
@@ -314,5 +325,36 @@ $(function() {
             }
         );
     });
+
+
+    // Portfolio
+    ///////////////////////////////////////////
+
+    // Isotope
+    // if ($('.grid').length > 0) {
+
+    //     // init Isotope
+    //     var $grid = $('.grid').isotope({
+    //         // options...
+    //         itemSelector: '.grid-item',
+    //         percentPosition: true,
+    //         masonry: {
+    //             // use element for option
+    //             columnWidth: '.grid-sizer'
+    //         }
+    //     });
+    //     // layout Isotope after each image loads
+    //     $grid.imagesLoaded().progress( function() {
+    //         $grid.isotope('layout');
+    //     });
+
+    // }
+
+    // Fancybox
+    if ($('[data-fancybox]').length > 0) {
+        Fancybox.bind("[data-fancybox]", {
+            // Your custom options
+        });
+    }
 
 })
