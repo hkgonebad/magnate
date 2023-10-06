@@ -4,57 +4,59 @@
         position: relative;
     }
 
-    .consultForm{
-        position: absolute;
-        z-index: 99;
-        bottom: -70px;
-        left: 0;
-        max-width: 400px;
-        width: 100%;
-        background: #13828d54;
-        padding: 15px;
-        border-radius: 10px;
+    
+}
 
-        @include media-breakpoint-down(md){
-            top: 0;
-            position: relative;
-            margin: 20px auto 20px;
+.consultForm{
+    position: absolute;
+    z-index: 99;
+    bottom: -70px;
+    left: 0;
+    max-width: 400px;
+    width: 100%;
+    background: #13828d54;
+    padding: 15px;
+    border-radius: 10px;
+
+    @include media-breakpoint-down(md){
+        top: 0;
+        position: relative;
+        margin: 20px auto 20px;
+    }
+
+    h4{
+        text-transform: uppercase;
+        position: relative;
+        padding-left: 15px;
+        font-size: 16px;
+        font-weight: 700;
+
+        &:before{
+            content: '';
+            height: 12px;
+            width: 8px;
+            position: absolute;
+            left: 0;
+            top: 3px;
+            background: $cyan;
         }
+    }
 
-        h4{
-            text-transform: uppercase;
-            position: relative;
-            padding-left: 15px;
-            font-size: 16px;
-            font-weight: 700;
+    .form-group{
+        margin-bottom: 10px;
 
-            &:before{
-                content: '';
-                height: 12px;
-                width: 8px;
-                position: absolute;
-                left: 0;
-                top: 3px;
-                background: $cyan;
-            }
+        .form-control{
+            font-size: 14px;
         }
+    }
 
-        .form-group{
-            margin-bottom: 10px;
+    .btns{
 
-            .form-control{
-                font-size: 14px;
-            }
-        }
-
-        .btns{
-
-            .btn{
-                font-size: 14px;
-                padding-left: 25px;
-                padding-right: 25px;
-                font-weight: 600;
-            }
+        .btn{
+            font-size: 14px;
+            padding-left: 25px;
+            padding-right: 25px;
+            font-weight: 600;
         }
     }
 }

@@ -30922,8 +30922,8 @@ a {
   position: relative;
 }
 
-/* line 7, ../laragon/www/magnate/scss/layout/_mobile.scss */
-.banner .consultForm {
+/* line 10, ../laragon/www/magnate/scss/layout/_mobile.scss */
+.consultForm {
   position: absolute;
   z-index: 99;
   bottom: -70px;
@@ -30936,16 +30936,16 @@ a {
 }
 
 @media (max-width: 767.98px) {
-  /* line 7, ../laragon/www/magnate/scss/layout/_mobile.scss */
-  .banner .consultForm {
+  /* line 10, ../laragon/www/magnate/scss/layout/_mobile.scss */
+  .consultForm {
     top: 0;
     position: relative;
     margin: 20px auto 20px;
   }
 }
 
-/* line 24, ../laragon/www/magnate/scss/layout/_mobile.scss */
-.banner .consultForm h4, .banner .consultForm .h4 {
+/* line 27, ../laragon/www/magnate/scss/layout/_mobile.scss */
+.consultForm h4, .consultForm .h4 {
   text-transform: uppercase;
   position: relative;
   padding-left: 15px;
@@ -30953,8 +30953,8 @@ a {
   font-weight: 700;
 }
 
-/* line 31, ../laragon/www/magnate/scss/layout/_mobile.scss */
-.banner .consultForm h4:before, .banner .consultForm .h4:before {
+/* line 34, ../laragon/www/magnate/scss/layout/_mobile.scss */
+.consultForm h4:before, .consultForm .h4:before {
   content: '';
   height: 12px;
   width: 8px;
@@ -30964,37 +30964,37 @@ a {
   background: #4da8b1;
 }
 
-/* line 42, ../laragon/www/magnate/scss/layout/_mobile.scss */
-.banner .consultForm .form-group {
+/* line 45, ../laragon/www/magnate/scss/layout/_mobile.scss */
+.consultForm .form-group {
   margin-bottom: 10px;
 }
 
-/* line 45, ../laragon/www/magnate/scss/layout/_mobile.scss */
-.banner .consultForm .form-group .form-control {
+/* line 48, ../laragon/www/magnate/scss/layout/_mobile.scss */
+.consultForm .form-group .form-control {
   font-size: 14px;
 }
 
-/* line 52, ../laragon/www/magnate/scss/layout/_mobile.scss */
-.banner .consultForm .btns .btn {
+/* line 55, ../laragon/www/magnate/scss/layout/_mobile.scss */
+.consultForm .btns .btn {
   font-size: 14px;
   padding-left: 25px;
   padding-right: 25px;
   font-weight: 600;
 }
 
-/* line 63, ../laragon/www/magnate/scss/layout/_mobile.scss */
+/* line 65, ../laragon/www/magnate/scss/layout/_mobile.scss */
 .overview {
   padding-top: 120px;
 }
 
-/* line 66, ../laragon/www/magnate/scss/layout/_mobile.scss */
+/* line 68, ../laragon/www/magnate/scss/layout/_mobile.scss */
 .overview .ovImg {
   position: relative;
   padding: 30px;
   padding-bottom: 0;
 }
 
-/* line 78, ../laragon/www/magnate/scss/layout/_mobile.scss */
+/* line 80, ../laragon/www/magnate/scss/layout/_mobile.scss */
 .overview .ovDetails .ovPercent {
   display: flex;
   align-items: center;
@@ -31002,7 +31002,7 @@ a {
   flex-wrap: wrap;
 }
 
-/* line 85, ../laragon/www/magnate/scss/layout/_mobile.scss */
+/* line 87, ../laragon/www/magnate/scss/layout/_mobile.scss */
 .overview .ovDetails .ovpBox {
   border: 2px solid #F2DB57;
   border-radius: 50%;
@@ -31017,7 +31017,7 @@ a {
   padding: 0 15px;
 }
 
-/* line 98, ../laragon/www/magnate/scss/layout/_mobile.scss */
+/* line 100, ../laragon/www/magnate/scss/layout/_mobile.scss */
 .overview .ovDetails .ovpBox img {
   width: auto;
   height: 55px;
@@ -31025,14 +31025,14 @@ a {
   flex-shrink: 0;
 }
 
-/* line 105, ../laragon/www/magnate/scss/layout/_mobile.scss */
+/* line 107, ../laragon/www/magnate/scss/layout/_mobile.scss */
 .overview .ovDetails .ovpBox span {
   display: inline-block;
   font-size: 13px;
   line-height: 16px;
 }
 
-/* line 118, ../laragon/www/magnate/scss/layout/_mobile.scss */
+/* line 120, ../laragon/www/magnate/scss/layout/_mobile.scss */
 .whatWeDo .servServiceIcon {
   text-align: center;
   color: #4190C2;
@@ -31040,27 +31040,27 @@ a {
   font-weight: 600;
 }
 
-/* line 127, ../laragon/www/magnate/scss/layout/_mobile.scss */
+/* line 129, ../laragon/www/magnate/scss/layout/_mobile.scss */
 .wws {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 @media (max-width: 767.98px) {
-  /* line 127, ../laragon/www/magnate/scss/layout/_mobile.scss */
+  /* line 129, ../laragon/www/magnate/scss/layout/_mobile.scss */
   .wws {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 575.98px) {
-  /* line 127, ../laragon/www/magnate/scss/layout/_mobile.scss */
+  /* line 129, ../laragon/www/magnate/scss/layout/_mobile.scss */
   .wws {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-/* line 139, ../laragon/www/magnate/scss/layout/_mobile.scss */
+/* line 141, ../laragon/www/magnate/scss/layout/_mobile.scss */
 .wws .wwsBox {
   text-align: center;
   border: 1px dotted #ffffff29;
@@ -31068,13 +31068,13 @@ a {
 }
 
 @media (max-width: 767.98px) {
-  /* line 139, ../laragon/www/magnate/scss/layout/_mobile.scss */
+  /* line 141, ../laragon/www/magnate/scss/layout/_mobile.scss */
   .wws .wwsBox {
     padding: 15px;
   }
 }
 
-/* line 148, ../laragon/www/magnate/scss/layout/_mobile.scss */
+/* line 150, ../laragon/www/magnate/scss/layout/_mobile.scss */
 .wws .wwsBox img {
   margin-bottom: 15px;
   max-height: fit-content;
@@ -31082,30 +31082,30 @@ a {
   height: 100px;
 }
 
-/* line 155, ../laragon/www/magnate/scss/layout/_mobile.scss */
+/* line 157, ../laragon/www/magnate/scss/layout/_mobile.scss */
 .wws .wwsBox h4, .wws .wwsBox .h4 {
   font-size: 16px;
   font-weight: 600;
   color: #13828D;
 }
 
-/* line 161, ../laragon/www/magnate/scss/layout/_mobile.scss */
+/* line 163, ../laragon/www/magnate/scss/layout/_mobile.scss */
 .wws .wwsBox p {
   font-size: 13px;
   margin: 0;
 }
 
-/* line 174, ../laragon/www/magnate/scss/layout/_mobile.scss */
+/* line 176, ../laragon/www/magnate/scss/layout/_mobile.scss */
 .clients-alt .clientsAlt .caSlide1 {
   margin: 0 5px;
 }
 
-/* line 178, ../laragon/www/magnate/scss/layout/_mobile.scss */
+/* line 180, ../laragon/www/magnate/scss/layout/_mobile.scss */
 .clients-alt .clientsAlt .caSlide2 {
   margin: 0 10px;
 }
 
-/* line 182, ../laragon/www/magnate/scss/layout/_mobile.scss */
+/* line 184, ../laragon/www/magnate/scss/layout/_mobile.scss */
 .clients-alt .clientsAlt .caBox {
   border: 1px solid #e1e1e1;
   padding: 15px;
@@ -31115,13 +31115,13 @@ a {
   margin: 0 10px;
 }
 
-/* line 190, ../laragon/www/magnate/scss/layout/_mobile.scss */
+/* line 192, ../laragon/www/magnate/scss/layout/_mobile.scss */
 .clients-alt .clientsAlt .caBox img {
   max-height: 60px;
   margin: 0 auto;
 }
 
-/* line 200, ../laragon/www/magnate/scss/layout/_mobile.scss */
+/* line 202, ../laragon/www/magnate/scss/layout/_mobile.scss */
 .whatYouNeed .stepsList {
   display: flex;
   align-items: center;
@@ -31131,7 +31131,7 @@ a {
   margin-bottom: 15px;
 }
 
-/* line 208, ../laragon/www/magnate/scss/layout/_mobile.scss */
+/* line 210, ../laragon/www/magnate/scss/layout/_mobile.scss */
 .whatYouNeed .stepsList .slBox {
   display: flex;
   align-items: center;
@@ -31146,7 +31146,7 @@ a {
   height: 150px;
 }
 
-/* line 222, ../laragon/www/magnate/scss/layout/_mobile.scss */
+/* line 224, ../laragon/www/magnate/scss/layout/_mobile.scss */
 .whatYouNeed .stepsList .slBox:after {
   content: '';
   position: absolute;
@@ -31159,14 +31159,14 @@ a {
   transform: translateY(-50%);
 }
 
-/* line 234, ../laragon/www/magnate/scss/layout/_mobile.scss */
+/* line 236, ../laragon/www/magnate/scss/layout/_mobile.scss */
 .whatYouNeed .stepsList .slBox img {
   margin-bottom: 8px;
   position: relative;
   z-index: 3;
 }
 
-/* line 240, ../laragon/www/magnate/scss/layout/_mobile.scss */
+/* line 242, ../laragon/www/magnate/scss/layout/_mobile.scss */
 .whatYouNeed .stepsList .slBox p {
   font-size: 12px;
   font-weight: 400;
@@ -31174,17 +31174,17 @@ a {
   z-index: 3;
 }
 
-/* line 249, ../laragon/www/magnate/scss/layout/_mobile.scss */
+/* line 251, ../laragon/www/magnate/scss/layout/_mobile.scss */
 .whatYouNeed .stepsDetails {
   margin-top: 30px;
 }
 
-/* line 252, ../laragon/www/magnate/scss/layout/_mobile.scss */
+/* line 254, ../laragon/www/magnate/scss/layout/_mobile.scss */
 .whatYouNeed .stepsDetails .sdBox {
   margin-bottom: 30px;
 }
 
-/* line 255, ../laragon/www/magnate/scss/layout/_mobile.scss */
+/* line 257, ../laragon/www/magnate/scss/layout/_mobile.scss */
 .whatYouNeed .stepsDetails .sdBox h4, .whatYouNeed .stepsDetails .sdBox .h4 {
   position: relative;
   padding-left: 30px;
@@ -31192,7 +31192,7 @@ a {
   margin-bottom: 15px;
 }
 
-/* line 261, ../laragon/www/magnate/scss/layout/_mobile.scss */
+/* line 263, ../laragon/www/magnate/scss/layout/_mobile.scss */
 .whatYouNeed .stepsDetails .sdBox h4 span, .whatYouNeed .stepsDetails .sdBox .h4 span {
   position: absolute;
   left: 0;
@@ -31201,7 +31201,7 @@ a {
   font-weight: 600;
 }
 
-/* line 270, ../laragon/www/magnate/scss/layout/_mobile.scss */
+/* line 272, ../laragon/www/magnate/scss/layout/_mobile.scss */
 .whatYouNeed .stepsDetails .sdBox p {
   padding-left: 30px;
   font-weight: 300;
@@ -31306,6 +31306,39 @@ a {
 /* line 94, ../laragon/www/magnate/scss/layout/_portfolio.scss */
 .portfolioGrid .pfBox:hover .pfImage img {
   transform: scale(1.1);
+}
+
+/* line 3, ../laragon/www/magnate/scss/layout/_contact.scss */
+.contact .consultForm {
+  position: relative;
+  bottom: 0;
+  top: 0;
+}
+
+/* line 17, ../laragon/www/magnate/scss/layout/_contact.scss */
+.socialLinks {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* line 22, ../laragon/www/magnate/scss/layout/_contact.scss */
+.socialLinks a {
+  background-color: #13828D;
+  color: #fff;
+  font-size: 16px;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  line-height: 32px;
+  text-align: center;
+  display: inline-block;
+}
+
+/* line 33, ../laragon/www/magnate/scss/layout/_contact.scss */
+.socialLinks a:hover {
+  background: #dc3545;
+  color: #fff;
 }
 
 /*# sourceMappingURL=main.css.map */
